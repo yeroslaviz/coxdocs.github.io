@@ -1,4 +1,4 @@
-name: "R Markdown Websites Tutorial"
+name: "Cox Docs for MaxQuant and Perseus"
 navbar:
   title: "HOME"
   left:
@@ -10,6 +10,16 @@ navbar:
       href: perseus_instructions.html
     - text: "Andromeda"
       href: andromeda_instructions.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: https://github.com/cox-labs/CoxLab_Bug_Reporting
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/TheCoxLab
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/juergen-cox-2437ba17/
+
 output_dir: "."
 output:
   html_document:

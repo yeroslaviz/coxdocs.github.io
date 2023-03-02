@@ -20,9 +20,7 @@ The best way to learn is to follow along with your own laptop, but all are welco
     - have RStudio linked directly (preferred) ([instructions sections 8-14](http://happygitwithr.com/hello-git.html))
     - or install the [Desktop App](https://desktop.github.com/)
     - or be familiar with git commands for the command line ([tutorial](https://try.github.io/levels/1/challenges/1))
-
 ----
-
 
 **Examples:**
 

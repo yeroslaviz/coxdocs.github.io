@@ -1,0 +1,15 @@
+---
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+For any questions or problems you can contact us in one of these ways:
+
+For bugs or requests concerning MaxQuant, Persus or Andromeda we have a [github repository](https://github.com/cox-labs/CoxLab_Bug_Reporting), where you can post your issues.
+
+Max-Planck-Institute for Biochemistry<br>
+Am Klopferspitz 18, 82152<br>
+Planegg, Germanuy<br>
+bioinfoservice et biochem . mpg.de<br>
+
+Or connect with us on GitHub, Twitter, or Linkedin (links in top right).
