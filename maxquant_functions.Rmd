@@ -21,7 +21,7 @@ MaxQuant is a proteomics software package designed for analyzing large mass-spec
 This documentation is organized as a wiki, so if you find anything that is wrong or hard to understand, in most cases you can fix it yourself by creating a puul request. The wiki can be browsed by using the links below. Anyone is allowed to read the wiki. If you are an **internal user at the MPI of Biochemistry**, you can get access to some restricted pages; contact the Cox group for further information.
 
   * [Download and installation](Download_Installation.html)
-  * [[:maxquant:manual:Beginner|First steps in MaxQuant]]
+  * [First steps in MaxQuant](MQ_FirstSteps.html)
   * [[:maxquant:viewer:start]]
   * [[:maxquant:andromeda:start]]
   * [[:maxquant:common:Google groups]]
