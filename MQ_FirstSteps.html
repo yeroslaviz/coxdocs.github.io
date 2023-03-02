@@ -9,10 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="AY" />
 
 <meta name="date" content="2023-03-02" />
 
-<title>Andromeda</title>
+<title>First steps with MaxQuant</title>
 
 <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -362,40 +363,56 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Andromeda</h1>
+<h1 class="title toc-ignore">First steps with MaxQuant</h1>
+<h4 class="author">AY</h4>
 <h4 class="date">2023-03-02</h4>
 
 </div>
 
 
-<p><br></p>
-<center>
-<img src="images/practicalDev_changingstuff.jpg" width="350px">
-</center>
-<p>Try changing a few things and reknitting a single page or rebuilding the whole site. Do your own thing, or here are a few things to try:</p>
-<p><br></p>
-<div id="add-a-new-page" class="section level3" number="0.0.1">
-<h3><span class="header-section-number">0.0.1</span> Add a new page</h3>
-<p>You’ll need to add it to the nav bar in <code>_site.yml</code> too.</p>
-<p><br></p>
+<p><em>The descriptions and screenshots in this tutorial refer to the MaxQuant GUI around version 1.4.3.14 from August 2014.</em></p>
+<p>In case you are a first time user you might be worried by the many options and parameters that one can set in the user interface. In that case we have good news for you. In almost all use cases the standard values of most parameters are fine and you only need to adjust a small number of factors. Typically there is only little information that you need to provide. Every parameter in the interface has context help which you obtain by hovering with the mouse pointer over the text string for this parameter. This documentation also has that information, and more.</p>
+<p>You will have to tell MaxQuant where to find your raw data files and your fasta files, and which labels and digestion enymes you are using. 90% of the time that will be enough, and you can leave the rest of the bells and whistles on their default values. Of course, we are assuming you have successfully <a href="Download_Installation.html">installed and started</a> MaxQuant, and that you can find the <strong>Start</strong> button once you have finished entering the processing parameters (hint: look in the lower left corner of the GUI). Here is more detail on how to enter those four most important parameters:</p>
+<ul>
+<li><strong>Raw data:</strong> Along the top of the GUI are six tabs. The first of these is <strong>Raw files</strong>. Select that tab, then click “Load” to open a browser where you can select the file containing your raw data. You can select any number of files. You can also select all the raw data files in a single folder by using the “Load folder” button. In the screen shot, two files have been loaded. (If you still have questions, there is a page that goes into details about the <a href="rawFilesTab.html">Raw Files tab</a>)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="Figures/rawFiles.png" alt="raw file tab" width="550" />
+<p class="caption">
+raw file tab
+</p>
 </div>
-<div id="add-a-footer" class="section level3" number="0.0.2">
-<h3><span class="header-section-number">0.0.2</span> Add a footer</h3>
-<ol style="list-style-type: decimal">
-<li>move <code>./advanced/_footer.html</code> to <code>./_footer.html</code> (or create a new one)</li>
-<li>uncomment the footer in <code>_site.yml</code></li>
-</ol>
-<p><br></p>
+<ul>
+<li><strong>Labels:</strong> The second tab is <strong>Group-specific parameters</strong>. You need to go there to specify your labels. The “Type” will usually be “Standard” (obviously), and the “Multiplicity” will be 1 for label-free quantification, 2 if you have light and heavy labels, and 3 if you have light, medium, and heavy. Any number of labels can be checked in the lists. In this example, the light sample is unlabeled and the heavy sample has been labeled with Arg10 and Lys8. (You can’t see them both without scrolling.)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="Figures/labels.png" alt="Group-specific parameters" width="550" />
+<p class="caption">
+Group-specific parameters
+</p>
 </div>
-<div id="add-three-columns" class="section level3" number="0.0.3">
-<h3><span class="header-section-number">0.0.3</span> Add three columns</h3>
-<p>How would you approach this? See what we did for 3 columns, or Google it.</p>
-<p><br></p>
+<ul>
+<li><strong>Enzymes:</strong> Also under the <strong>Group-specific parameters</strong> tab, you should enter the “Enzyme” (one or more) with which you have digested your proteins. They can be moved from the list at the left and back with the arrow buttons, and the order changed with the “t” (to top), “u” (up one place), “d” (down one place), and “b” (to bottom) buttons. In this example, we used Trypsin/P.</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="Figures/digestion.png" alt="enzymes" width="550" />
+<p class="caption">
+enzymes
+</p>
 </div>
-<div id="what-else-did-you-learn" class="section level3" number="0.0.4">
-<h3><span class="header-section-number">0.0.4</span> What else did you learn?</h3>
-<p><a href="https://help.github.com/articles/creating-a-pull-request/">Submit a pull request</a> to <a href="https://github.com/yeroslaviz/rmarkdown-website-tutorial">this tutorial</a> and we can update it with what you learn!</p>
+<ul>
+<li><strong>FASTA:</strong> Finally you will need to go to the third tab, “Global parameters” to specify where to find the “Fasta files” (one or more) you want to use. The “Add file” button will open a file browser.</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="Figures/fasta.png" alt="fasta file" width="550" />
+<p class="caption">
+fasta file
+</p>
 </div>
+<p>After you press the “Start” button, you can monitor the progress of the analysis under the fourth tab, <strong>Performance</strong>. A popup window saying ‘Done’ will appear when MaxQuant is finished. All result files will appear in the folder <code>…\combined\txt</code> as tab-delimited text files. A pdf document with a description of all columns in all tables will be written to <code>…\combined\txt\tables.pdf</code>.</p>
+<p>The fifth tab is the <strong>Viewer</strong>, used to examine the results of the analysis, which will be the topic of the <a href="viewer_tutorials.html">viewer tutorial</a>. All columns have interactive descriptions in the Viewer program. Just move the mouse over the beginning of the column title and click on the question mark that will appear.</p>
+<p>The sixth and final tab is <strong>Andromeda configuration</strong>. Andromeda is the peptide search engine, which needs to know what modifications, proteases, and sequence databases to take into consideration. Almost all that you will ever need are pre-configured, but you can use the buttons under this tab to add more, if your experiment requires it.</p>
+<p>That’s how easy it can be!</p>
 
 
 

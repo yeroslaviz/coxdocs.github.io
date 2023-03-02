@@ -1,9 +1,15 @@
 ---
-title: "Now it's your turn"
+title: "Andromeda"
+date: "`r format(Sys.Date())`"
 output:
   html_document:
-    toc: true
-    toc_float: true
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
 ---
 
 <br>

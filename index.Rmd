@@ -1,9 +1,15 @@
 ---
 title: "Cox Docs"
 author:  "[Assa Yeroslaviz](https://github.com/yeroslaviz)"
+date: "`r format(Sys.Date())`"
 output:
   html_document:
-    fig_width: 1
+    highlight: haddock
+    number_sections: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
 ---
 
 ----
@@ -20,7 +26,6 @@ The best way to learn is to follow along with your own laptop, but all are welco
     - have RStudio linked directly (preferred) ([instructions sections 8-14](http://happygitwithr.com/hello-git.html))
     - or install the [Desktop App](https://desktop.github.com/)
     - or be familiar with git commands for the command line ([tutorial](https://try.github.io/levels/1/challenges/1))
-----
 
 **Examples:**
 

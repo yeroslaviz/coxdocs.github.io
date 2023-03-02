@@ -10,9 +10,8 @@
 
 
 
-<meta name="date" content="2023-03-02" />
 
-<title>Andromeda</title>
+<title>contact.knit</title>
 
 <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -30,10 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -46,6 +44,16 @@
   ul.task-list{list-style: none;}
     </style>
 
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
 
 
 
@@ -213,75 +221,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
-
-
 
 </head>
 
@@ -289,16 +228,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -362,45 +291,23 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Andromeda</h1>
-<h4 class="date">2023-03-02</h4>
 
 </div>
 
 
-<p><br></p>
-<center>
-<img src="images/practicalDev_changingstuff.jpg" width="350px">
-</center>
-<p>Try changing a few things and reknitting a single page or rebuilding the whole site. Do your own thing, or here are a few things to try:</p>
-<p><br></p>
-<div id="add-a-new-page" class="section level3" number="0.0.1">
-<h3><span class="header-section-number">0.0.1</span> Add a new page</h3>
-<p>You’ll need to add it to the nav bar in <code>_site.yml</code> too.</p>
-<p><br></p>
-</div>
-<div id="add-a-footer" class="section level3" number="0.0.2">
-<h3><span class="header-section-number">0.0.2</span> Add a footer</h3>
-<ol style="list-style-type: decimal">
-<li>move <code>./advanced/_footer.html</code> to <code>./_footer.html</code> (or create a new one)</li>
-<li>uncomment the footer in <code>_site.yml</code></li>
-</ol>
-<p><br></p>
-</div>
-<div id="add-three-columns" class="section level3" number="0.0.3">
-<h3><span class="header-section-number">0.0.3</span> Add three columns</h3>
-<p>How would you approach this? See what we did for 3 columns, or Google it.</p>
-<p><br></p>
-</div>
-<div id="what-else-did-you-learn" class="section level3" number="0.0.4">
-<h3><span class="header-section-number">0.0.4</span> What else did you learn?</h3>
-<p><a href="https://help.github.com/articles/creating-a-pull-request/">Submit a pull request</a> to <a href="https://github.com/yeroslaviz/rmarkdown-website-tutorial">this tutorial</a> and we can update it with what you learn!</p>
-</div>
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<p>MaxQuant, Perseus, and related software packages are developed by the <a href="http://www.biochem.mpg.de/cox/index.html">Computational Systems Biochemistry</a> under Prof. Jürgen Cox.</p>
+<p>If you need to contact the developers, you have a few options to proceed:</p>
+<ul>
+<li>If you think something is misspelled or unclear in the documentation, consider changing it yourself (creating a pull request is quite easy).</li>
+<li>If you have found a bug in the software or want to make a feature request, please create an issue on <a href="https://github.com/cox-labs/CoxLab_Bug_Reporting">our github repository</a>.</li>
+</ul>
+<p>If you have a general usage question, ask it on <a href="https://maxquant.org/community/">the appropriate Google group</a>.</p>
+<p>We are also always on the lookout for promising canditates. In case you are interested in becoming a Master’s/PhD student or a postdoc, we encourage you to apply at all time via e-mail to <a href="mailto:cox@biochem.mpg.de">Jürgen Cox</a>.</p>
+<p>Or connect with us on GitHub, Twitter, or Linkedin (links in top right).</p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -433,35 +340,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = false;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

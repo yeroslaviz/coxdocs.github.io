@@ -1,39 +1,57 @@
 ---
-title: "Now it's your turn"
+title: "MaxQuant"
+author: "AY"
+date: "`r format(Sys.Date())`"
 output:
   html_document:
-    toc: true
-    toc_float: true
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
 ---
 
-<br>
-
-<center><img src="images/practicalDev_changingstuff.jpg" width="350px"></center>  
+MaxQuant is a proteomics software package designed for analyzing large mass-spectrometric data sets. It is specifically aimed at high-resolution MS data. Several labeling techniques as well as label-free quantification are supported. MaxQuant is freely available and can be downloaded from this site. The download includes the search engine [Andromeda](andromeda_instructions.html), which is integrated into MaxQuant as well as the [viewer](viewer_instructions.html) application for inspection of raw data and identification and quantification results. For statistical analysis of MaxQuant output, we offer the [Perseus](perseus_instructions.html) framework.
 
 
-Try changing a few things and reknitting a single page or rebuilding the whole site. Do your own thing, or here are a few things to try: 
+# Documentation outline
 
-<br> 
+This documentation is organized as a wiki, so if you find anything that is wrong or hard to understand, in most cases you can fix it yourself by creating a puul request. The wiki can be browsed by using the links below. Anyone is allowed to read the wiki. If you are an **internal user at the MPI of Biochemistry**, you can get access to some restricted pages; contact the Cox group for further information.
 
-### Add a new page
+  * [Download and installation](Download_Installation.html)
+  * [[:maxquant:manual:Beginner|First steps in MaxQuant]]
+  * [[:maxquant:viewer:start]]
+  * [[:maxquant:andromeda:start]]
+  * [[:maxquant:common:Google groups]]
+  * [[:maxquant:common:Bug reporting]]
+<ifauth @internal>
+These pages are only visible to internal users:
+  * [[:maxquant:common:internal:Glossary]]
+  * [[:maxquant:internal:FAQ]]
+  * [[:maxquant:internal:background]] (how it works under the hood)
+</ifauth>
 
-You'll need to add it to the nav bar in `_site.yml` too.
+For additional training, consider attending the annual [MaxQuant Summer School](https://maxquant.org/summer_school/). Also watching some [MaxQuant videos](https://www.youtube.com/c/MaxQuantChannel) provides more insight.
 
-<br>
+\\
 
-### Add a footer
+# Publications
 
-1. move `./advanced/_footer.html` to `./_footer.html` (or create a new one)
-2. uncomment the footer in `_site.yml`
+Cox, J. and Mann, M. [MaxQuant enables high peptide identification rates, individualized p.p.b.-range mass accuracies and proteome-wide protein quantification.](http://www.nature.com/nbt/journal/v26/n12/full/nbt.1511.html) //Nat Biotechnol//, 2008, 26, pp 1367-72.
+\\ **Note that the paper has a large supplement containing in-depth descriptions of algorithms.**
 
-<br>
+Cox, J., Michalski, A., and Mann, M., [Software Lock Mass by Two-Dimensional Minimization of Peptide Mass Errors.](http://link.springer.com/article/10.1007%2Fs13361-011-0142-8) //J Am Soc Mass Spectrom.//, 2011, 22, pp 1373–1380. 
 
-### Add three columns
+Schaab C., Geiger T., Stoehr G., Cox J., and Mann M. [Analysis of High Accuracy, Quantitative Proteomics Data in the MaxQB Database.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3316731/) //Mol Cell Proteomics//, 2012, 11, M111.014068. 
 
-How would you approach this? See what we did for 3 columns, or Google it.
+Cox J., Hein M. Y., Luber C. A., Paron I., Nagaraj N., and Mann M., [|Accurate Proteome-wide Label-free Quantification by Delayed Normalization and Maximal Peptide Ratio Extraction, Termed MaxLFQ.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4159666/) //Mol Cell Proteomics//, 2014, 13, pp 2513–2526.
 
-<br> 
+Tyanova, S., Temu, T., Carlson, A., Sinitcyn, P., Mann, M. and Cox, J., [Visualization of LC-MS/MS proteomics data in MaxQuant](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201400449/abstract), //Proteomics//, 2015, 15, pp 1453–1456
 
-### What else did you learn? 
+Tyanova, S., Temu, T., and Cox, J., [The MaxQuant computational platform for mass spectrometry-based shotgun proteomics](https://www.nature.com/articles/nprot.2016.136), //Nat Protocols//, 2016, 11, pp 2301–2319
+\\ **Note that this paper explains how to run MaxQuant in detail.**
 
-[Submit a pull request](https://help.github.com/articles/creating-a-pull-request/) to [this tutorial](https://github.com/yeroslaviz/rmarkdown-website-tutorial) and we can update it with what you learn!
+-----
+[Contact](contact.html)
